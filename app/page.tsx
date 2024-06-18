@@ -1,10 +1,13 @@
 import Link from "next/link";
 import ButtonSignin from "@/components/ButtonSignin";
+import RegulatoryInfoPage from "@/app/pages/RegulatoryInfoPage"
 
 export default function Page() {
   return (
     <>
-      <header className="p-4 flex justify-end max-w-7xl mx-auto">
+      <RegulatoryInfoPage country="United States"/>
+
+      {/* <header className="p-4 flex justify-end max-w-7xl mx-auto">
         <ButtonSignin text="Login" />
       </header>
       <main>
@@ -39,7 +42,7 @@ export default function Page() {
             Fancy a blog?
           </Link>
         </section>
-      </main>
+      </main> */}
     </>
   );
 }
