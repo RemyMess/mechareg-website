@@ -1,54 +1,59 @@
 import React from 'react';
-import RegulatoryInfo from 
 import AllRegularyInfos from "@/app/pages/AllRegulatoryInfos";
+
 
 // Functional component to display regulatory information
 const RegulatoryInfoPage: React.FC<{ country: string }> = ({ country }) => {
   const RegulatoryInfo = AllRegularyInfos[country]
 
   return (
-    <div>
-      <h1>Regulatory Information for Medical Devices - {country}</h1>
-
-      <h2>Regulatory Authorities:</h2>
-      <ul>
-        {RegulatoryInfo.regulatoryAuthorities.map(authority => (
-          <li key={authority.name}>
-            <a href={authority.url} target="_blank" rel="noopener noreferrer">{authority.name}</a>
-          </li>
-        ))}
-      </ul>
-
-      <h2>Requirements to Sell Device:</h2>
-      <ul>
-        {RegulatoryInfo.requirements.map(requirement => (
-          <li key={requirement.description}>
-            {requirement.description} - {' '}
-            <a href={requirement.url} target="_blank" rel="noopener noreferrer">More Info</a>
-          </li>
-        ))}
-      </ul>
-
-      <h2>Legislative Document:</h2>
-      <p>
-        <a href={RegulatoryInfo.legislativeDocument.url} target="_blank" rel="noopener noreferrer">
-          {RegulatoryInfo.legislativeDocument.name}
-        </a>
-      </p>
-
-      <h2>Acceptance of International Standards:</h2>
-      {RegulatoryInfo.internationalStandards.acceptance ? (
-        <ul>
-          {RegulatoryInfo.internationalStandards.standards.map(standard => (
-            <li key={standard.name}>
-              {standard.name} - {' '}
-              <a href={standard.url} target="_blank" rel="noopener noreferrer">Details</a>
+    <div className="text-left">
+      <h1 className="font-bold text-xl mb-4">Summary of how Medical Devices are approved {"(" + RegulatoryInfo.fullName + ")"}</h1>
+        <h2 className="font-bold mt-4 mb-2">A. Who are the relevant local authorities?</h2>
+        <p>{RegulatoryInfo.regulatoryAuthoritiesDescription}</p>
+        <ol className="list-disc ml-6">
+          {RegulatoryInfo.regulatoryAuthorities.map(authority => (
+            <li key={authority.name} >
+              <a className="text-blue-500 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out" href={authority.url} target={authority.url} rel={authority.url}>{authority.name}</a>
             </li>
           ))}
-        </ul>
-      ) : (
-        <p>International standards not accepted.</p>
-      )}
+        </ol>
+
+        <h2 className="font-bold mt-4 mb-2">B. What needs to be done before selling in this country?</h2>
+          <p className="mb-2">{RegulatoryInfo.highLevelRequirement}</p>
+          <ol className="list-decimal ml-6">
+            {RegulatoryInfo.tradingRequirements.map(tradingRequirement => (
+              <li key={tradingRequirement.description}>
+                <b>{tradingRequirement.title}</b>: {' '}
+                {tradingRequirement.description} - {' '}
+                <a className="text-blue-500 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out" href={tradingRequirement.url} target={tradingRequirement.url} rel="noopener noreferrer">More Info</a>
+              </li>
+            ))}
+          </ol>
+
+        <h2 className="font-bold font-bold mt-4 mb-2">C. Which documents do I need to consume?</h2>
+          <ol className="list-decimal ml-6">
+            {RegulatoryInfo.legislativeDocuments.map(legislativeDocument => (
+              <li key={legislativeDocument.name}>
+                <a className="text-blue-500 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out" href={legislativeDocument.url} target={legislativeDocument.url} rel="noopener noreferrer">
+                  {legislativeDocument.name}
+                </a>
+              </li>
+            ))}
+          </ol>
+
+        <h2 className="font-bold font-bold mt-4 mb-2">D. If this country accepts international standards, which ones?</h2>
+        {RegulatoryInfo.internationalStandards.acceptance ? (
+          <ul className="list-disc ml-6">
+            {RegulatoryInfo.internationalStandards.standards.map(standard => (
+              <li key={standard.name}>
+                <a className="text-blue-500 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out" href={standard.url} target={standard.url} rel="noopener noreferrer">{standard.name}</a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>International standards not accepted.</p>
+        )}
     </div>
   );
 }

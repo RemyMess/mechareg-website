@@ -5,14 +5,14 @@ import RegulatoryInfoPage from "@/app/pages/RegulatoryInfoPage"
 export default function Page() {
   return (
     <>
-      <RegulatoryInfoPage country="United States"/>
-
-      {/* <header className="p-4 flex justify-end max-w-7xl mx-auto">
+      <header className="p-4 flex justify-end max-w-7xl mx-auto">
         <ButtonSignin text="Login" />
       </header>
       <main>
         <section className="flex flex-col items-center justify-center text-center gap-12 px-8 py-24">
-          <h1 className="text-3xl font-extrabold">Ship Fast ⚡️</h1>
+
+        <RegulatoryInfoPage country="US"/>
+          {/* <h1 className="text-3xl font-extrabold">Ship Fast ⚡️</h1>
 
           <p className="text-lg opacity-80">
             The start of your new startup... What are you gonna build?
@@ -40,9 +40,9 @@ export default function Page() {
 
           <Link href="/blog" className="link link-hover text-sm">
             Fancy a blog?
-          </Link>
+          </Link> */}
         </section>
-      </main> */}
+      </main>
     </>
   );
 }
