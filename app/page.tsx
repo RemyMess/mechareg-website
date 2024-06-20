@@ -1,18 +1,24 @@
+"use client";
+
 import Link from "next/link";
 import ButtonSignin from "@/components/ButtonSignin";
-import RegulatoryInfoPage from "@/app/pages/RegulatoryInfoPage"
-
+import GuidanceWorkflow from "@/app/pages/GuidanceWorkflow"
 
 export default function Page() {
   return (
     <>
-      <header className="p-4 flex justify-end max-w-7xl mx-auto">
-        <ButtonSignin text="Login" />
-      </header>
-      <main>
-        <section className="flex flex-col items-center justify-center text-center gap-12 px-8 py-24">
 
-        <RegulatoryInfoPage countryCode="US"/>
+
+      {/* <header className="p-4 flex justify-end max-w-7xl mx-auto">
+        <ButtonSignin text="Login" />
+      </header> */}
+      <main>
+        <section className="px-8">
+        {/* COMMENT: PENDING ROUTER - THIS IS A ROUTE */}
+          <GuidanceWorkflow/>
+          
+          
+          
           {/* <h1 className="text-3xl font-extrabold">Ship Fast ⚡️</h1>
 
           <p className="text-lg opacity-80">

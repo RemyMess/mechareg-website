@@ -6,13 +6,10 @@ const RegulatoryInfoPage: React.FC<{ countryCode: string }> = ({ countryCode }) 
   const RegulatoryInfo = AllRegularyInfos[countryCode]
 
   return (
-    <>
-
-
     <div className="text-left">
-      <h1 className="font-bold text-3xl mb-10 flex"><img className="mx-2 pb-2" src={"https://catamphetamine.gitlab.io/country-flag-icons/3x2/" + countryCode +".svg"} style={{height: "50px"}}/> {RegulatoryInfo.fullName}</h1>
+      <h1 className="font-bold text-3xl mb-10 flex"><img className="mx-2 pb-2" src={"https://catamphetamine.gitlab.io/country-flag-icons/3x2/" + countryCode +".svg"} style={{height: "50px"}}/> {RegulatoryInfo.fullName} {":  How are Medical Devices approved?"}</h1>
 
-      <h1 className="font-bold text-xl mb-4 flex">Overview of how Medical Devices are approved:</h1>
+      {/* <h1 className="font-bold text-xl mb-4 flex">Core information</h1> */}
         <h2 className="font-bold mt-4 mb-2">A. Who are the relevant local authorities?</h2>
         <p>{RegulatoryInfo.regulatoryAuthoritiesDescription}</p>
         <ol className="list-disc ml-6">
@@ -35,7 +32,11 @@ const RegulatoryInfoPage: React.FC<{ countryCode: string }> = ({ countryCode }) 
             ))}
           </ol>
 
-        <h2 className="font-bold font-bold mt-4 mb-2">C. Which documents do I need to consume?</h2>
+
+        <h2 className="font-bold font-bold mt-4 mb-2">C. Where do I need to submit these documents?</h2>
+          <p className="mb-2">{RegulatoryInfo.documentSubmissionProcess}</p>
+
+        <h2 className="font-bold font-bold mt-4 mb-2">D. What are the documents I should be aware of?</h2>
           <ol className="list-decimal ml-6">
             {RegulatoryInfo.legislativeDocuments.map(legislativeDocument => (
               <li key={legislativeDocument.name}>
@@ -46,7 +47,7 @@ const RegulatoryInfoPage: React.FC<{ countryCode: string }> = ({ countryCode }) 
             ))}
           </ol>
 
-        <h2 className="font-bold font-bold mt-4 mb-2">D. If this country accepts international standards, which ones?</h2>
+        <h2 className="font-bold font-bold mt-4 mb-2">E. If this country accepts international standards, which ones?</h2>
         {RegulatoryInfo.internationalStandards.acceptance ? (
           <ul className="list-disc ml-6">
             {RegulatoryInfo.internationalStandards.standards.map(standard => (
@@ -59,7 +60,6 @@ const RegulatoryInfoPage: React.FC<{ countryCode: string }> = ({ countryCode }) 
           <p>International standards not accepted.</p>
         )}
     </div>
-    </>
   );
 }
 
