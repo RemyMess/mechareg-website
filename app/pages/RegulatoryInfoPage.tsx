@@ -1,14 +1,18 @@
 import React from 'react';
 import AllRegularyInfos from "@/app/pages/AllRegulatoryInfos";
 
-
 // Functional component to display regulatory information
-const RegulatoryInfoPage: React.FC<{ country: string }> = ({ country }) => {
-  const RegulatoryInfo = AllRegularyInfos[country]
+const RegulatoryInfoPage: React.FC<{ countryCode: string }> = ({ countryCode }) => {
+  const RegulatoryInfo = AllRegularyInfos[countryCode]
 
   return (
+    <>
+
+
     <div className="text-left">
-      <h1 className="font-bold text-xl mb-4">Summary of how Medical Devices are approved {"(" + RegulatoryInfo.fullName + ")"}</h1>
+      <h1 className="font-bold text-3xl mb-10 flex"><img className="mx-2 pb-2" src={"https://catamphetamine.gitlab.io/country-flag-icons/3x2/" + countryCode +".svg"} style={{height: "50px"}}/> {RegulatoryInfo.fullName}</h1>
+
+      <h1 className="font-bold text-xl mb-4 flex">Overview of how Medical Devices are approved:</h1>
         <h2 className="font-bold mt-4 mb-2">A. Who are the relevant local authorities?</h2>
         <p>{RegulatoryInfo.regulatoryAuthoritiesDescription}</p>
         <ol className="list-disc ml-6">
@@ -55,6 +59,7 @@ const RegulatoryInfoPage: React.FC<{ country: string }> = ({ country }) => {
           <p>International standards not accepted.</p>
         )}
     </div>
+    </>
   );
 }
 
