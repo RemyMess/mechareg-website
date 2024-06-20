@@ -1,12 +1,12 @@
 import React from 'react';
-import AllRegularyInfos from "@/app/pages/AllRegulatoryInfos";
+import AllRegularyInfos from "@/app/pages/ExpeditedApprovals/AllRegulatoryInfos";
 
 // Functional component to display regulatory information
 const RegulatoryInfoPage: React.FC<{ countryCode: string }> = ({ countryCode }) => {
   const RegulatoryInfo = AllRegularyInfos[countryCode]
 
   return (
-    <div className="text-left">
+    <div className="text-left full-width">
       <h1 className="font-bold text-3xl mb-10 flex"><img className="mx-2 pb-2" src={"https://catamphetamine.gitlab.io/country-flag-icons/3x2/" + countryCode +".svg"} style={{height: "50px"}}/> {RegulatoryInfo.fullName} {":  How are Medical Devices approved?"}</h1>
 
       {/* <h1 className="font-bold text-xl mb-4 flex">Core information</h1> */}

@@ -13,7 +13,7 @@ interface RegulatoryInfo {
     }
   }
 
-const AllRegularyInfos: RegulatoryInfo = 
+const ALL_REGULATORY_INFOS: RegulatoryInfo = 
     {
             "US": {
               fullName: "United States",
@@ -1389,4 +1389,4 @@ const AllRegularyInfos: RegulatoryInfo =
 
 
 
-export default AllRegularyInfos
+export default ALL_REGULATORY_INFOS
