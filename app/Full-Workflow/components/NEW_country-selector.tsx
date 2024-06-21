@@ -51,6 +51,8 @@ export default function CountrySelector({
 
     return (
         <div ref={ref}>
+
+            <h1 className="font-bold text-3xl mb-20 flex justify-center">Launch your medical device globally, in weeks not years.</h1>
             <div className="mt-1 relative">
                 <button
                     type="button"
@@ -112,7 +114,7 @@ export default function CountrySelector({
                                         name="search"
                                         autoComplete={"off"}
                                         className="focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                        placeholder={"Search a country"}
+                                        placeholder={"Pick a country"}
                                         onChange={(e) => setQuery(e.target.value)}
                                     />
                                 </li>

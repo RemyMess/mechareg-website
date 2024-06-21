@@ -10,7 +10,7 @@ const RegulatoryInfoPage: React.FC<RegulatoryInfoPageProps> = ({ countryCode }) 
 
     return (
         <div className="text-left full-width">
-            <h1 className="font-bold text-3xl mb-10 flex">
+            <h1 className="font-bold text-3xl mb-10 flex justify-center">
                 <img
                     className="mx-2 pb-2"
                     src={`https://catamphetamine.gitlab.io/country-flag-icons/3x2/${countryCode}.svg`}

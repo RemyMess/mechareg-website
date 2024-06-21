@@ -26,7 +26,7 @@ const GuidanceWorkflow: React.FC = () => {
             case 1:
                 return (
                     <Box>
-                        <Heading>Select a Country</Heading>
+                        {/* <Heading>Select a Country</Heading> */}
                         <CountrySelector
                             id="country-selector"
                             open={true}
@@ -53,7 +53,7 @@ const GuidanceWorkflow: React.FC = () => {
 
                 <div className="flex items-center justify-between w-full mb-8 py-12">
                     <button
-                        className={"btn mr-20 bg-black text-white px-10 py-2"}
+                        className={`btn mr-20 bg-black text-white px-10 py-2 ${((step === 1) || (step === 1 && selectedCountry.value === '')) ? 'opacity-0 pointer-events-none' : ''}`}
                         onClick={() => setStep(Math.max(1, step - 1))}
                         disabled={step === 1}
                     >
@@ -61,9 +61,11 @@ const GuidanceWorkflow: React.FC = () => {
                     </button>
                     {Stepper(step)}
                     <button
-                        className={`btn ml-20 bg-black text-white px-10 py-2`}
+                        className={`btn ml-20 bg-black text-white px-10 py-2 ${((step === 3 || step === 1) || (step === 1 && selectedCountry.value === '')) ? 'opacity-0 pointer-events-none' : ''}`}
                         onClick={() => setStep(Math.min(step + 1, 3))}
-                        disabled={step === 3 || (step === 1 && selectedCountry.value === '')}
+                        disabled={(step === 3 || step == 1) || (step === 1 && selectedCountry.value === '')}
+                        invisible={true}
+                        // hidden={(step === 3 || step == 1) || (step === 1 && selectedCountry.value === '')}
                     >
                         Next
                     </button>

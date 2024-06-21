@@ -12,9 +12,9 @@ const ExpeditedApprovals: React.FC<{ countryCode: string }> = ({ countryCode }) 
 
     return (
         <div className="text-center full-width align-content-center">
-            <h1 className="font-bold text-3xl mb-10 flex">
+            <h1 className="font-bold text-3xl mb-10 flex justify-center">
                 <img className="mx-2 pb-2" src={`https://catamphetamine.gitlab.io/country-flag-icons/3x2/${countryCode}.svg`} style={{height: "50px"}} alt={`${RegulatoryInfo.fullName} flag`} />
-                {RegulatoryInfo.fullName}: Speedrun your approval process
+                {RegulatoryInfo.fullName}: Optimised steps for fast approval
             </h1>
             {/* <p>Below is an optimised list of questions & tasks we'll ask you to complete to obtain approval. For some steps, we provide tailored tools to make completion even faster.</p> */}
             

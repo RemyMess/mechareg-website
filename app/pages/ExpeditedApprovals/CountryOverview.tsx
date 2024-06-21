@@ -7,7 +7,7 @@ const RegulatoryInfoPage: React.FC<{ countryCode: string }> = ({ countryCode }) 
 
   return (
     <div className="text-left full-width">
-      <h1 className="font-bold text-3xl mb-10 flex"><img className="mx-2 pb-2" src={"https://catamphetamine.gitlab.io/country-flag-icons/3x2/" + countryCode +".svg"} style={{height: "50px"}}/> {RegulatoryInfo.fullName} {":  How are Medical Devices approved?"}</h1>
+      <h1 className="font-bold text-3xl mb-10 flex justify-center"><img className="mx-2 pb-2" src={"https://catamphetamine.gitlab.io/country-flag-icons/3x2/" + countryCode +".svg"} style={{height: "50px"}}/> {RegulatoryInfo.fullName} {":  How are Medsical Devices approved?"}</h1>
 
       {/* <h1 className="font-bold text-xl mb-4 flex">Core information</h1> */}
         <h2 className="font-bold mt-4 mb-2">A. Who are the relevant local authorities?</h2>
