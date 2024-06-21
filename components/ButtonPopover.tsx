@@ -1,14 +1,26 @@
 "use client";
 
+import React from 'react';
 import { Popover, Transition } from "@headlessui/react";
 
-const ButtonPopover = () => {
+interface Option {
+  title: string;
+  description: string;
+  url: string;
+}
+
+interface ButtonPopoverProps {
+  buttonText: string;
+  options: Option[];
+}
+
+const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options }) => {
   return (
-    <Popover className="relative z-10">
+    <Popover className="relative z-100">
       {({ open }) => (
         <>
-          <Popover.Button className="btn">
-            Popover Button
+          <Popover.Button className="btn bg-black text-white">
+            {buttonText}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -35,6 +47,8 @@ const ButtonPopover = () => {
             <Popover.Panel className="absolute left-0 z-10 mt-3 w-screen max-w-full sm:max-w-sm lg:max-w-2xl transform">
               <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-base-content ring-opacity-5">
                 <div className="relative grid gap-4 bg-base-100 p-4 lg:grid-cols-2">
+
+                {options.length > 0 && (
                   <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
                     <span className="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-orange-500/20">
                       <svg
@@ -57,37 +71,74 @@ const ButtonPopover = () => {
                         />
                       </svg>
                     </span>
+
+
                     <div className="">
-                      <p className="font-bold">Get Started</p>
+                      <p className="font-bold">{options[0]["title"]}</p>
                       <p className="opacity-70">
-                        Loreum ipseum de la madre de papa
+                        {options[0]["description"]}
                       </p>
                     </div>
                   </div>
-                  <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
-                    <span className="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-yellow-500/20">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-6 h-6 stroke-yellow-600"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
-                        />
-                      </svg>
-                    </span>
-                    <div className="">
-                      <p className="font-bold">Rewards</p>
-                      <p className="opacity-70">
-                        Loreum ipseum de el papi de la mama
-                      </p>
+                  )}
+
+                  {options.length > 2 && (
+                    <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
+                      <span className="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-yellow-500/20">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-6 h-6 stroke-yellow-600"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+                          />
+                        </svg>
+                      </span>
+                      <div className="">
+                        <p className="font-bold">{options[1]["title"]}</p>
+                        <p className="opacity-70">
+                          {options[1]["description"]}
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  )}
+
+
+
+                  {options.length > 3 && (
+                    <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
+                      <span className="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-yellow-500/20">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-6 h-6 stroke-green-600"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                          />
+                        </svg>
+                      </span>
+                      <div className="">
+                        <p className="font-bold">{options[1]["title"]}</p>
+                        <p className="opacity-70">
+                          {options[1]["description"]}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+
                   <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
                     <span className="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-green-500/20">
                       <svg
@@ -106,12 +157,40 @@ const ButtonPopover = () => {
                       </svg>
                     </span>
                     <div className="">
-                      <p className="font-bold">Academics</p>
+                      <p className="font-bold">Ask us a question</p>
                       <p className="opacity-70">
-                        Loreum ipseum de la madre de papa
+                        Expert answers to any compliance question!
                       </p>
                     </div>
                   </div>
+
+                  <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
+                    <span className="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-blue-500/20">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-6 h-6 stroke-blue-600"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                        />
+                      </svg>
+                    </span>
+                    <div className="">
+                      <p className="font-bold">Hire experts to do it fast</p>
+                      <p className="opacity-70">
+                        We're a global team of compliance experts & engineers  with decades of cumulative experience. 
+                      </p>
+                    </div>
+                  </div>
+
+
+
                 </div>
               </div>
             </Popover.Panel>

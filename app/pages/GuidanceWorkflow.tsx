@@ -35,7 +35,7 @@ export default function GuidanceWorkflow() {
         <div className="flex items-center justify-between w-full mb-8 py-12">
             {/* {!(step == 1) && ( */}
                 <button
-                className={"btn mr-20 bg-black text-white px-10 py-2"}
+                className={"btn mr-20 bg-black text-white px-5 py-2"}
                 onClick={()=>{setStep(Math.max(1, step-1))}}
                 disabled={step == 1}
                 >
@@ -44,7 +44,7 @@ export default function GuidanceWorkflow() {
             {/* )} */}
                 {Stepper(step)}
             <button
-                className={`btn ml-20 bg-black text-white px-10 py-2`}
+                className={`btn ml-20 bg-black text-white px-5 py-2`}
                 onClick={()=>{setStep(Math.min(step+1, 3))}}
                 >
                 {"Next"}
