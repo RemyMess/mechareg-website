@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import ButtonSignin from "@/components/ButtonSignin";
-import GuidanceWorkflow from "@/app/pages/GuidanceWorkflow"
+// import GuidanceWorkflow from "@/app/pages/GuidanceWorkflow"
+import GuidanceWorkflow from "@/app/Full-Workflow/pages/NEW_guidance-workflow"
 
 export default function Page() {
   return (
