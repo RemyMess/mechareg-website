@@ -76,10 +76,12 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options }) =>
 
 
                     <div className="">
-                      <p className="font-bold">{options[0]["title"]}</p>
-                      <p className="opacity-70">
-                        {options[0]["description"]}
-                      </p>
+                      <a href={options[0]["url"]}>
+                        <p className="font-bold">{options[0]["title"]}</p>
+                        <p className="opacity-70">
+                          {options[0]["description"]}
+                        </p>
+                      </a>
                     </div>
                   </div>
                   )}

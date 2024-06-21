@@ -20,7 +20,7 @@ const ExpeditedApprovals: React.FC<{ countryCode: string }> = ({ countryCode }) 
             
             <div className="relative flex flex-col items-center p-4">
             {/* <div className="absolute h-full border-l-2 border-gray-300" style={{ left: '50%' }}></div> */}
-                <ButtonPopover buttonText={"Step 1. Identify your risk class."} options={[{title: "Do it now", description: "We built an optimal tree of questions to narrow down your risk class as fast as possible.", url: "url"}]} />
+                <ButtonPopover buttonText={"Step 1. Identify your risk class."} options={[{title: "Do it now", description: "We built an optimal tree of questions to narrow down your risk class as fast as possible.", url: "https://remymessadene.notion.site/UK-Risk-Classifier-774d31775601403a8744285d0181f321?pvs=4"}]} />
                 <Image src={Arrow1} alt="Arrow 1" width={100} height={100} style={{marginTop: "5px", marginBottom: "5px"}}/>
                 <ButtonPopover buttonText={"Step 2. Verify your device's compliance"} options={[{title: "Get a check-list of requirements", description: "We break down required documentations and standards.", url: "url"}]} />
                 <Image src={Arrow2} alt="Arrow 1" width={100} height={100} style={{marginTop: "5px", marginBottom: "5px"}}/>
