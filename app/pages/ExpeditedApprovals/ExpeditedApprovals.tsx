@@ -32,9 +32,9 @@ const ExpeditedApprovals: React.FC<{ countryCode: string }> = ({ countryCode }) 
           </ol>
 
         <h2 className="font-bold font-bold mt-4 mb-2">Step 5. Send documents for conformity assessment</h2>
-          <ol className="list-decimal ml-6">
+          <p className="mb-2">
             Conduct a conformity assessment to demonstrate that your device meets the essential requirements of the UK MDR. For Class IIb and Class III devices, this typically involves an audit by a Notified Body or Approved Body.
-          </ol>
+          </p>
 
 
         <h2 className="font-bold font-bold mt-4 mb-2">Step 6. Affix your UKCA Marking</h2>
