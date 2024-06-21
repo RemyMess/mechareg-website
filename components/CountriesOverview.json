@@ -1,0 +1,203 @@
+{
+    "United States": {
+      "overviewTextHtml": "```<p>Overview text for the United States.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_the_United_States"
+    },
+    "China": {
+      "overviewTextHtml": "```<p>Overview text for China.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_the_People's_Republic_of_China"
+    },
+    "Japan": {
+      "overviewTextHtml": "```<p>Overview text for Japan.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Japan"
+    },
+    "Germany": {
+      "overviewTextHtml": "```<p>Overview text for Germany.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Germany"
+    },
+    "France": {
+      "overviewTextHtml": "```<p>Overview text for France.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_France"
+    },
+    "United Kingdom": {
+      "overviewTextHtml": "```<p>Overview text for the United Kingdom.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_the_United_Kingdom"
+    },
+    "India": {
+      "overviewTextHtml": "```<p>Overview text for India.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_India"
+    },
+    "Brazil": {
+      "overviewTextHtml": "```<p>Overview text for Brazil.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+    },
+    "Canada": {
+      "overviewTextHtml": "```<p>Overview text for Canada.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Canada"
+    },
+    "South Korea": {
+      "overviewTextHtml": "```<p>Overview text for South Korea.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_South_Korea"
+    },
+    "Italy": {
+      "overviewTextHtml": "```<p>Overview text for Italy.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Italy"
+    },
+    "Australia": {
+      "overviewTextHtml": "```<p>Overview text for Australia.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Australia"
+    },
+    "Russia": {
+      "overviewTextHtml": "```<p>Overview text for Russia.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Russia"
+    },
+    "Spain": {
+      "overviewTextHtml": "```<p>Overview text for Spain.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+    },
+    "Mexico": {
+      "overviewTextHtml": "```<p>Overview text for Mexico.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Mexico"
+    },
+    "Netherlands": {
+      "overviewTextHtml": "```<p>Overview text for the Netherlands.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_the_Netherlands"
+    },
+    "Saudi Arabia": {
+      "overviewTextHtml": "```<p>Overview text for Saudi Arabia.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia"
+    },
+    "Switzerland": {
+      "overviewTextHtml": "```<p>Overview text for Switzerland.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Switzerland"
+    },
+    "Turkey": {
+      "overviewTextHtml": "```<p>Overview text for Turkey.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Turkey"
+    },
+    "Argentina": {
+      "overviewTextHtml": "```<p>Overview text for Argentina.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Argentina"
+    },
+    "Sweden": {
+      "overviewTextHtml": "```<p>Overview text for Sweden.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Sweden"
+    },
+    "Belgium": {
+      "overviewTextHtml": "```<p>Overview text for Belgium.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Belgium"
+    },
+    "Poland": {
+      "overviewTextHtml": "```<p>Overview text for Poland.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Poland"
+    },
+    "Thailand": {
+      "overviewTextHtml": "```<p>Overview text for Thailand.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Thailand"
+    },
+    "South Africa": {
+      "overviewTextHtml": "```<p>Overview text for South Africa.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_South_Africa"
+    },
+    "Austria": {
+      "overviewTextHtml": "```<p>Overview text for Austria.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Austria"
+    },
+    "Malaysia": {
+      "overviewTextHtml": "```<p>Overview text for Malaysia.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
+    },
+    "Singapore": {
+      "overviewTextHtml": "```<p>Overview text for Singapore.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Singapore"
+    },
+    "Israel": {
+      "overviewTextHtml": "```<p>Overview text for Israel.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Israel"
+    },
+    "Norway": {
+      "overviewTextHtml": "```<p>Overview text for Norway.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Norway"
+    },
+    "Finland": {
+      "overviewTextHtml": "```<p>Overview text for Finland.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Finland"
+    },
+    "Denmark": {
+      "overviewTextHtml": "```<p>Overview text for Denmark.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Denmark"
+    },
+    "Ireland": {
+      "overviewTextHtml": "```<p>Overview text for Ireland.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Ireland"
+    },
+    "Portugal": {
+      "overviewTextHtml": "```<p>Overview text for Portugal.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Portugal"
+    },
+    "Greece": {
+      "overviewTextHtml": "```<p>Overview text for Greece.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Greece"
+    },
+    "United Arab Emirates": {
+      "overviewTextHtml": "```<p>Overview text for the United Arab Emirates.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates"
+    },
+    "Chile": {
+      "overviewTextHtml": "```<p>Overview text for Chile.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Chile"
+    },
+    "New Zealand": {
+      "overviewTextHtml": "```<p>Overview text for New Zealand.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_New_Zealand"
+    },
+    "Colombia": {
+      "overviewTextHtml": "```<p>Overview text for Colombia.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Colombia"
+    },
+    "Czech Republic": {
+      "overviewTextHtml": "```<p>Overview text for Czech Republic.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_the_Czech_Republic"
+    },
+    "Philippines": {
+      "overviewTextHtml": "```<p>Overview text for Philippines.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_the_Philippines"
+    },
+    "Vietnam": {
+      "overviewTextHtml": "```<p>Overview text for Vietnam.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Vietnam"
+    },
+    "Egypt": {
+      "overviewTextHtml": "```<p>Overview text for Egypt.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Egypt"
+    },
+    "Pakistan": {
+      "overviewTextHtml": "```<p>Overview text for Pakistan.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Pakistan"
+    },
+    "Romania": {
+      "overviewTextHtml": "```<p>Overview text for Romania.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Romania"
+    },
+    "Hungary": {
+      "overviewTextHtml": "```<p>Overview text for Hungary.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Hungary"
+    },
+    "Qatar": {
+      "overviewTextHtml": "```<p>Overview text for Qatar.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Qatar"
+    },
+    "Ukraine": {
+      "overviewTextHtml": "```<p>Overview text for Ukraine.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Ukraine"
+    },
+    "Peru": {
+      "overviewTextHtml": "```<p>Overview text for Peru.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Peru"
+    },
+    "Kuwait": {
+      "overviewTextHtml": "```<p>Overview text for Kuwait.</p>```",
+      "countryFlagUrl": "https://en.wikipedia.org/wiki/Flag_of_Kuwait"
+    }
+  }
+  
