@@ -1,3 +1,4 @@
+/*
 import { NextResponse, NextRequest } from "next/server";
 import { headers } from "next/headers";
 import Stripe from "stripe";
@@ -6,6 +7,7 @@ import configFile from "@/config";
 import User from "@/models/User";
 import { findCheckoutSession } from "@/libs/stripe";
 
+// @ts-ignore
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: "2023-08-16",
   typescript: true,
@@ -47,6 +49,7 @@ export async function POST(req: NextRequest) {
         const session = await findCheckoutSession(stripeObject.id);
 
         const customerId = session?.customer;
+        // @ts-ignore
         const priceId = session?.line_items?.data[0]?.price.id;
         const userId = stripeObject.client_reference_id;
         const plan = configFile.stripe.plans.find((p) => p.priceId === priceId);
@@ -132,6 +135,7 @@ export async function POST(req: NextRequest) {
         const stripeObject: Stripe.Invoice = event.data
           .object as Stripe.Invoice;
 
+        // @ts-ignore
         const priceId = stripeObject.lines.data[0].price.id;
         const customerId = stripeObject.customer;
 
@@ -165,3 +169,4 @@ export async function POST(req: NextRequest) {
 
   return NextResponse.json({});
 }
+*/
