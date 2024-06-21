@@ -44,9 +44,11 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options }) =>
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0"
           >
-            <Popover.Panel className="absolute left-0 z-10 mt-3 w-screen max-w-full sm:max-w-sm lg:max-w-2xl transform">
+            {/* <Popover.Panel className="absolute z-10 w-full max-w-5xl mt-2 left-1/2 transform -translate-x-1/2"> */}
+            <Popover.Panel className="absolute z-10 mt-2 w-screen transform -translate-x-1/2 left-1/2">
+            {/* <Popover.Panel className="absolute left-0 z-10 mt-3 w-screen max-w-full sm:max-w-sm lg:max-w-2xl transform"> */}
               <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-base-content ring-opacity-5">
-                <div className="relative grid gap-4 bg-base-100 p-4 lg:grid-cols-2">
+                <div className="relative grid gap-4 bg-base-100 p-4 lg:grid-cols-3">
 
                 {options.length > 0 && (
                   <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
@@ -157,10 +159,15 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options }) =>
                       </svg>
                     </span>
                     <div className="">
-                      <p className="font-bold">Ask us a question</p>
-                      <p className="opacity-70">
-                        Expert answers to any compliance question!
-                      </p>
+                      <a
+                        href="mailto:support@mechadoc.io"
+                        className=""
+                      >
+                        <p className="font-bold">Ask us a question</p>
+                        <p className="opacity-70">
+                          Expert answers to any compliance question!
+                        </p>
+                      </a>
                     </div>
                   </div>
 
@@ -182,15 +189,17 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options }) =>
                       </svg>
                     </span>
                     <div className="">
-                      <p className="font-bold">Hire experts to do it fast</p>
-                      <p className="opacity-70">
-                        We're a global team of compliance experts & engineers  with decades of cumulative experience. 
-                      </p>
+                      <a
+                        href="mailto:support@mechadoc.io"
+                        className=""
+                      >
+                        <p className="font-bold">Hire experts to do it fast</p>
+                        <p className="opacity-70">
+                          We're a global team of compliance experts & engineers  with decades of cumulative experience. 
+                        </p>
+                      </a>
                     </div>
                   </div>
-
-
-
                 </div>
               </div>
             </Popover.Panel>

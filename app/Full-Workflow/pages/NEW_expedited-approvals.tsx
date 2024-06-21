@@ -20,21 +20,21 @@ const ExpeditedApprovals: React.FC<{ countryCode: string }> = ({ countryCode }) 
             
             <div className="relative flex flex-col items-center p-4">
             {/* <div className="absolute h-full border-l-2 border-gray-300" style={{ left: '50%' }}></div> */}
-                <ButtonPopover buttonText={"Step 1. Identify your risk class."} options={[{title: "Run through our tree", description: "We built an optimal list of questions to narrow down your risk class for this country.", url: "url"}]} />
+                <ButtonPopover buttonText={"Step 1. Identify your risk class."} options={[{title: "Do it now", description: "We built an optimal tree of questions to narrow down your risk class as fast as possible.", url: "url"}]} />
                 <Image src={Arrow1} alt="Arrow 1" width={100} height={100} style={{marginTop: "5px", marginBottom: "5px"}}/>
-                <ButtonPopover buttonText={"Step 2. Verify your device's compliance."} options={[]} />
+                <ButtonPopover buttonText={"Step 2. Verify your device's compliance"} options={[{title: "Get a check-list of requirements", description: "We break down required documentations and standards.", url: "url"}]} />
                 <Image src={Arrow2} alt="Arrow 1" width={100} height={100} style={{marginTop: "5px", marginBottom: "5px"}}/>
-                <ButtonPopover buttonText={"Step 3. Conducting successful trials."} options={[{title: "Run through our tree", description: "We built an optimal list of questions to narrow down your risk class for this country.", url: "url"}]} />
+                <ButtonPopover buttonText={"Step 3. Conducting successful trials"} options={[{title: "Review trial guidelines", description: "We built an optimal list of questions to narrow down your risk class for this country.", url: "url"}]} />
                 <Image src={Arrow1} alt="Arrow 1" width={100} height={100} style={{marginTop: "5px", marginBottom: "5px"}}/>
-                <ButtonPopover buttonText={"Step 4. Produce required documentation."} options={[{title: "Run through our tree", description: "We built an optimal list of questions to narrow down your risk class for this country.", url: "url"}]} />
+                <ButtonPopover buttonText={"Step 4. Produce required documentation"} options={[{title: "Review documentation & grab templates", description: "There are standards guiding what and how documentation must be written.", url: "url"}]} />
                 <Image src={Arrow2} alt="Arrow 1" width={100} height={100} style={{marginTop: "5px", marginBottom: "5px"}}/>
-                <ButtonPopover buttonText={"Step 5. Schedule a conformity assessment."} options={[{title: "Run through our tree", description: "We built an optimal list of questions to narrow down your risk class for this country.", url: "url"}]} />
+                <ButtonPopover buttonText={"Step 5. Schedule a conformity assessment"} options={[{title: "Find a test-center", description: "Book a conformity assessment to demonstrate satisfaction of the UK MDR. For Class IIb and Class III devices, we provide a list of Notified Body or Approved Body.", url: "url"}]} />
                 <Image src={Arrow1} alt="Arrow 1" width={100} height={100} style={{marginTop: "5px", marginBottom: "5px"}}/>
-                <ButtonPopover buttonText={"Step 6. Comply with UKCA Marking."} options={[{title: "Run through our tree", description: "We built an optimal list of questions to narrow down your risk class for this country.", url: "url"}]} />
+                <ButtonPopover buttonText={"Step 6. Comply with UKCA Marking"} options={[{title: "Review guidance documents", description: "We built an optimal list of questions to narrow down your risk class for this country.", url: "url"}]} />
                 <Image src={Arrow2} alt="Arrow 1" width={100} height={100} style={{marginTop: "5px", marginBottom: "5px"}}/>
-                <ButtonPopover buttonText={"Step 7. Register your device with MHRA."} options={[{title: "Run through our tree", description: "We built an optimal list of questions to narrow down your risk class for this country.", url: "url"}]} />
+                <ButtonPopover buttonText={"Step 7. Register your device with MHRA"} options={[{title: "Prepare your registration", description: "We built an optimal list of questions to narrow down your risk class for this country.", url: "url"}]} />
                 <Image src={Arrow1} alt="Arrow 1" width={100} height={100} style={{marginTop: "5px", marginBottom: "5px"}}/>
-                <ButtonPopover buttonText={"Step 8. Automate your post-market reporting."} options={[{title: "Run through our tree", description: "We built an optimal list of questions to narrow down your risk class for this country.", url: "url"}]} />
+                <ButtonPopover buttonText={"Step 8. Automate your post-market reporting"} options={[{title: "Review your responsabilities & automate them", description: "Refresh your mind with your obligations and set up processes to take care of them.", url: "url"}]} />
             </div>
                         
                 {/* <h2 className="font-bold mt-4 mb-2">Step 1: Identify your risk class.</h2>

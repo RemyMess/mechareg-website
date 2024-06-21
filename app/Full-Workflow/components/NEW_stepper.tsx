@@ -1,7 +1,7 @@
 const STEPS_NAMES = [
     "Select Country",
-    "Review process",
-    "Speed up approval"
+    "Get up to speed",
+    "Speedrun approval"
 ]
 
 const _renderMultipleWordsOnLine = (stepName: string) => {

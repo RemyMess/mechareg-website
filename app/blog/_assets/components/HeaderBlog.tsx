@@ -58,7 +58,10 @@ const ButtonPopoverCategories = () => {
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0"
           >
-            <Popover.Panel className="absolute left-0 z-30 mt-3 w-screen max-w-full sm:max-w-sm transform">
+
+
+<Popover.Panel className="absolute z-10 w-full max-w-5xl mt-2 left-1/2 transform -translate-x-1/2">
+            {/* <Popover.Panel className="absolute left-0 z-30 mt-3 w-screen max-w-full sm:max-w-sm transform -translate-x-1/2"> */}
               {({ close }) => (
                 <div className="overflow-hidden rounded-box shadow-lg ring-1 ring-base-content ring-opacity-5">
                   <div className="relative grid gap-2 bg-base-100 p-2 overflow-hidden">

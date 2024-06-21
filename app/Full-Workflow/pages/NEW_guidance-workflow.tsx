@@ -64,7 +64,6 @@ const GuidanceWorkflow: React.FC = () => {
                         className={`btn ml-20 bg-black text-white px-10 py-2 ${((step === 3 || step === 1) || (step === 1 && selectedCountry.value === '')) ? 'opacity-0 pointer-events-none' : ''}`}
                         onClick={() => setStep(Math.min(step + 1, 3))}
                         disabled={(step === 3 || step == 1) || (step === 1 && selectedCountry.value === '')}
-                        invisible={true}
                         // hidden={(step === 3 || step == 1) || (step === 1 && selectedCountry.value === '')}
                     >
                         Next

@@ -16,9 +16,9 @@ const RegulatoryInfoPage: React.FC<RegulatoryInfoPageProps> = ({ countryCode }) 
                     src={`https://catamphetamine.gitlab.io/country-flag-icons/3x2/${countryCode}.svg`}
                     style={{ height: "50px" }}
                 />
-                {RegulatoryInfo.fullName}: How are Medical Devices approved?
+                {RegulatoryInfo.fullName}: How does it work there?
             </h1>
-            <h2 className="font-bold mt-4 mb-2">A. Who are the relevant local authorities?</h2>
+            <h2 className="font-bold mt-4 mb-2">A. Relevant authorities:</h2>
             <p>{RegulatoryInfo.regulatoryAuthoritiesDescription}</p>
             <ol className="list-disc ml-6">
                 {RegulatoryInfo.regulatoryAuthorities.map(authority => (
@@ -34,7 +34,7 @@ const RegulatoryInfoPage: React.FC<RegulatoryInfoPageProps> = ({ countryCode }) 
                     </li>
                 ))}
             </ol>
-            <h2 className="font-bold mt-4 mb-2">B. What needs to be done before selling in this country?</h2>
+            <h2 className="font-bold mt-4 mb-2">B. Approval process:</h2>
             <p className="mb-2">{RegulatoryInfo.highLevelRequirement}</p>
             <ol className="list-decimal ml-6">
                 {RegulatoryInfo.tradingRequirements.map(tradingRequirement => (
@@ -52,9 +52,9 @@ const RegulatoryInfoPage: React.FC<RegulatoryInfoPageProps> = ({ countryCode }) 
                     </li>
                 ))}
             </ol>
-            <h2 className="font-bold font-bold mt-4 mb-2">C. Where do I need to submit these documents?</h2>
+            <h2 className="font-bold font-bold mt-4 mb-2">C. Document submission procedure:</h2>
             <p className="mb-2">{RegulatoryInfo.documentSubmissionProcess}</p>
-            <h2 className="font-bold font-bold mt-4 mb-2">D. What are the documents I should be aware of?</h2>
+            <h2 className="font-bold font-bold mt-4 mb-2">D. Key documents to be aware of:</h2>
             <ol className="list-decimal ml-6">
                 {RegulatoryInfo.legislativeDocuments.map(legislativeDocument => (
                     <li key={legislativeDocument.name}>
@@ -69,7 +69,7 @@ const RegulatoryInfoPage: React.FC<RegulatoryInfoPageProps> = ({ countryCode }) 
                     </li>
                 ))}
             </ol>
-            <h2 className="font-bold font-bold mt-4 mb-2">E. If this country accepts international standards, which ones?</h2>
+            <h2 className="font-bold font-bold mt-4 mb-2">E. Recognised standards:</h2>
             {RegulatoryInfo.internationalStandards.acceptance ? (
                 <ul className="list-disc ml-6">
                     {RegulatoryInfo.internationalStandards.standards.map(standard => (
