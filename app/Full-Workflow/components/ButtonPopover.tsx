@@ -48,7 +48,7 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options, menu
             leaveTo="transform scale-95 opacity-0"
           >
             {/* <Popover.Panel className="absolute z-10 w-full max-w-5xl mt-2 left-1/2 transform -translate-x-1/2"> */}
-            <Popover.Panel className="absolute z-10 mt-2 w-screen transform -translate-x-1/2 left-1/2">
+            <Popover.Panel className="absolute z-10 mt-2 w-[80vw] transform -translate-x-1/2 left-1/2">
             {/* <Popover.Panel className="absolute left-0 z-10 mt-3 w-screen max-w-full sm:max-w-sm lg:max-w-2xl transform"> */}
               <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-base-content ring-opacity-5 z-10">
 
@@ -60,7 +60,7 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options, menu
                           /> */}
 
 
-              <div className="relative grid gap-4 bg-base-100 p-4 lg:grid-cols-3 items-center">  
+              <div className={`relative grid gap-4 bg-base-100 p-4 items-center ${options.length === 0 ? "lg:grid-cols-2" : "lg:grid-cols-3"}`}>
                   
 
                 {options.length > 0 && (
