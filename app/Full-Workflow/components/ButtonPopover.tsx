@@ -3,7 +3,9 @@
 import React from 'react';
 import { Popover, Transition } from "@headlessui/react";
 
-interface Option {
+import AvatarImg from "@/app/assets/AI female profile.png";
+
+interface CtaOption {
   title: string;
   description: string;
   url: string;
@@ -11,10 +13,11 @@ interface Option {
 
 interface ButtonPopoverProps {
   buttonText: string;
-  options: Option[];
+  options: CtaOption[];
+  menuDescription: string;
 }
 
-const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options }) => {
+const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options, menuDescription }) => {
   return (
     <Popover className="relative z-100">
       {({ open }) => (
@@ -47,13 +50,23 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options }) =>
             {/* <Popover.Panel className="absolute z-10 w-full max-w-5xl mt-2 left-1/2 transform -translate-x-1/2"> */}
             <Popover.Panel className="absolute z-10 mt-2 w-screen transform -translate-x-1/2 left-1/2">
             {/* <Popover.Panel className="absolute left-0 z-10 mt-3 w-screen max-w-full sm:max-w-sm lg:max-w-2xl transform"> */}
-              <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-base-content ring-opacity-5">
+              <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-base-content ring-opacity-5 z-10">
+
+                  <div className="text-gray-500 text-xs pt-5 pb-5 z-10 bg-base-100 mx-100">{`"${menuDescription}"`}</div>
+                    {/* <img
+                          src={AvatarImg.src}
+                          alt="Avatar"
+                          className="w-10 h-10 rounded-full"
+                          /> */}
+
+
                 <div className="relative grid gap-4 bg-base-100 p-4 lg:grid-cols-3">
+                  
 
                 {options.length > 0 && (
                   <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
                     <span className="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-orange-500/20">
-                      <svg
+                      {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -71,7 +84,13 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options }) =>
                           strokeLinejoin="round"
                           d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"
                         />
-                      </svg>
+                      </svg> */}
+
+                      <img
+                          src={AvatarImg.src}
+                          alt="Avatar"
+                          className="w-10 h-10 rounded-full"
+                          />
                     </span>
 
 
@@ -167,7 +186,7 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options }) =>
                       >
                         <p className="font-bold">Ask us a question</p>
                         <p className="opacity-70">
-                          Expert answers to any compliance question!
+                          Text us & we'll answer any compliance question!
                         </p>
                       </a>
                     </div>
@@ -197,7 +216,7 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options }) =>
                       >
                         <p className="font-bold">Hire experts to do it fast</p>
                         <p className="opacity-70">
-                          We're a global team of compliance experts & engineers  with decades of cumulative experience. 
+                          We're a global team of compliance experts & engineers with decades of regulatory experience. 
                         </p>
                       </a>
                     </div>
@@ -213,3 +232,4 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options }) =>
 };
 
 export default ButtonPopover;
+export type { CtaOption };
