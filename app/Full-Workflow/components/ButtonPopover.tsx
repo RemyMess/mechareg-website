@@ -60,13 +60,13 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options, menu
                           /> */}
 
 
-                <div className="relative grid gap-4 bg-base-100 p-4 lg:grid-cols-3">
+              <div className="relative grid gap-4 bg-base-100 p-4 lg:grid-cols-3 items-center">  
                   
 
                 {options.length > 0 && (
                   <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
                     <span className="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-orange-500/20">
-                      {/* <svg
+                      <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -84,13 +84,13 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options, menu
                           strokeLinejoin="round"
                           d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"
                         />
-                      </svg> */}
+                      </svg>
 
-                      <img
+                      {/* <img
                           src={AvatarImg.src}
                           alt="Avatar"
                           className="w-10 h-10 rounded-full"
-                          />
+                          /> */}
                     </span>
 
 
