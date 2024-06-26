@@ -3,7 +3,9 @@
 import React from 'react';
 import { Popover, Transition } from "@headlessui/react";
 
-import AvatarImg from "@/app/assets/AI female profile.png";
+import CertificateIcon from "@/app/assets/Certificate Check Icon.svg";
+import SmileyIcon from "@/app/assets/Face Smile Icon.svg";
+import PlayIcon from "@/app/assets/Play icon.svg";
 
 interface CtaOption {
   title: string;
@@ -66,7 +68,7 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options, menu
                 {options.length > 0 && (
                   <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
                     <span className="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-orange-500/20">
-                      <svg
+                        {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -84,18 +86,18 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options, menu
                           strokeLinejoin="round"
                           d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"
                         />
-                      </svg>
+                      </svg> */}
 
-                      {/* <img
-                          src={AvatarImg.src}
+                      <img
+                          src={PlayIcon.src}
                           alt="Avatar"
                           className="w-10 h-10 rounded-full"
-                          /> */}
+                          />
                     </span>
 
 
                     <div className="">
-                      <a href={options[0]["url"]}>
+                      <a href={options[0]["url"]} target="_blank">
                         <p className="font-bold">{options[0]["title"]}</p>
                         <p className="opacity-70">
                           {options[0]["description"]}
@@ -164,7 +166,7 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options, menu
 
                   <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
                     <span className="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-green-500/20">
-                      <svg
+                      {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -177,7 +179,12 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options, menu
                           strokeLinejoin="round"
                           d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
                         />
-                      </svg>
+                      </svg> */}
+                      <img
+                          src={SmileyIcon.src}
+                          alt="Certificate"
+                          className="w-10 h-10 rounded-full"
+                          />
                     </span>
                     <div className="">
                       <a
@@ -194,7 +201,7 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options, menu
 
                   <div className="text-sm flex items-center gap-3 p-2 cursor-pointer hover:bg-base-200 rounded-lg duration-200">
                     <span className="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-blue-500/20">
-                      <svg
+                      {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -207,7 +214,12 @@ const ButtonPopover: React.FC<ButtonPopoverProps> = ({ buttonText, options, menu
                           strokeLinejoin="round"
                           d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
                         />
-                      </svg>
+                      </svg> */}
+                      <img
+                          src={CertificateIcon.src}
+                          alt="Certificate"
+                          className="w-10 h-10 rounded-full"
+                          />
                     </span>
                     <div className="">
                       <a
