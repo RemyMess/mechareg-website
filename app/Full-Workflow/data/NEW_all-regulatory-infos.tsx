@@ -30,7 +30,7 @@ const ALL_REGULATORY_INFOS: RegulatoryInfo =
                 {
                     "title": "Device Classification",
                     "description": "Determine the appropriate classification of your device under the FDA's Medical Device Classification system.",
-                    "url": "https://www.fda.gov/medical-devices/classify-your-medical-device"
+                    "url": "https://www.fda.gov/medical-devices/overview-device-regulation/classify-your-medical-device"
                 },
                 {
                     "title": "Premarket Notification (510(k)) or Premarket Approval (PMA)",
@@ -40,7 +40,7 @@ const ALL_REGULATORY_INFOS: RegulatoryInfo =
                 {
                     "title": "Quality System Regulation (QSR)",
                     "description": "Implement and adhere to FDA's Quality System Regulation, which includes requirements for design controls, production controls, and quality assurance.",
-                    "url": "https://www.fda.gov/medical-devices/postmarket-requirements-devices/quality-system-regulations"
+                    "url": "https://www.fda.gov/medical-devices/postmarket-requirements-devices/quality-system-qs-regulationmedical-device-current-good-manufacturing-practices-cgmp"
                 },
                 {
                     "title": "Labeling and Advertising",
@@ -51,20 +51,12 @@ const ALL_REGULATORY_INFOS: RegulatoryInfo =
             legislativeDocuments: [
                 {
                     "name": "FDA Regulations",
-                    "url": "https://www.fda.gov/medical-devices/overview-device-regulation"
+                    "url": "https://www.fda.gov/regulatory-information/fda-rules-and-regulations"
                 }
             ],
             internationalStandards: {
-                "acceptance": true,
+                "acceptance": false,
                 "standards": [
-                    {
-                        "name": "ISO 13485",
-                        "url": "https://www.iso.org/standard/59752.html"
-                    },
-                    {
-                        "name": "IEC 60601",
-                        "url": "https://www.iec.ch/standards/60446"
-                    }
                 ]
             },
             documentSubmissionProcess: "Submission details for FDA premarket notifications (510(k)) and premarket approvals (PMA) are provided in the specific guidance documents available on the FDA website."
@@ -296,7 +288,7 @@ const ALL_REGULATORY_INFOS: RegulatoryInfo =
                 {
                     "title": "Device Classification",
                     "description": "Determine the appropriate classification of your device under the UK MDR 2002.",
-                    "url": "https://www.gov.uk/guidance/medical-devices-conformity-assessment-and-the-ukca-mark"
+                    "url": "https://www.gov.uk/government/consultations/consultation-on-the-future-regulation-of-medical-devices-in-the-united-kingdom/chapter-2-classification"
                 },
                 {
                     "title": "Conformity Assessment",
