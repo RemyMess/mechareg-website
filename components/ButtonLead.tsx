@@ -1,3 +1,4 @@
+/*
 "use client";
 
 import React, { useState, useRef } from "react";
@@ -77,3 +78,4 @@ const ButtonLead = ({ extraStyle }: { extraStyle?: string }) => {
 };
 
 export default ButtonLead;
+*/
