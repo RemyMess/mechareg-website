@@ -1,5 +1,5 @@
 import React from 'react';
-import ALL_REGULATORY_INFOS from "@/app/pages/ExpeditedApprovals/AllRegulatoryInfos"
+import ALL_REGULATORY_INFOS from "@/removed files/app/pages/ExpeditedApprovals/AllRegulatoryInfos"
 // Functional component to display regulatory information
 const ExpeditedApprovals: React.FC<{ countryCode: string }> = ({ countryCode }) => {
 

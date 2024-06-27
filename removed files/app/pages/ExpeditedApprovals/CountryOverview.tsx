@@ -1,5 +1,5 @@
 import React from 'react';
-import AllRegularyInfos from "@/app/pages/ExpeditedApprovals/AllRegulatoryInfos";
+import AllRegularyInfos from "@/removed files/app/pages/ExpeditedApprovals/AllRegulatoryInfos";
 
 // Functional component to display regulatory information
 const RegulatoryInfoPage: React.FC<{ countryCode: string }> = ({ countryCode }) => {
