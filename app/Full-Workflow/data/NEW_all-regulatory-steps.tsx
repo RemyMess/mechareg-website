@@ -62,7 +62,7 @@ const ALL_REGULATORY_STEPS: RegulatorySteps =
                 {
                 stepName: "Identify Your Risk Class",
                 stepDescription: "In the UK, the regulations and process you will need to follow will depend on the risk class of your device (Class I, IIa, IIb, III).",
-                stepTools: [{title: "Do it now", description: "We built an optimal tree of questions to narrow down your risk class as fast as possible.", url: "https://remymessadene.notion.site/UK-Risk-Classifier-774d31775601403a8744285d0181f321?pvs=4"}]
+                stepTools: [{title: "Do it now", description: "Run through a house-built optimal question tree narrowing down your risk class as fast as possible.", url: "https://remymessadene.notion.site/UK-Risk-Classifier-774d31775601403a8744285d0181f321?pvs=4"}]
                 },
                 {
                 stepName: "Verify Device Compliance",
