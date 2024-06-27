@@ -67,7 +67,7 @@ const ALL_REGULATORY_STEPS: RegulatorySteps =
                 {
                 stepName: "Verify Device Compliance",
                 stepDescription: "Ensure that your device design, manufacturing processes, and safety testing meet the requirements of the UK Medical Device Regulations (MDR) 2002.",
-                stepTools: []
+                stepTools: [{title: "Do it now", description: "Gather the main regulatory documents & guidelines before converting regulatory text into actionable requirements.", url: "https://remymessadene.notion.site/UK-Verify-Device-Compliance-a71082e171a340df82fc2eda5bfdd643?pvs=4"}]
                 },
                 {
                 stepName: "Conduct Preclinical and Clinical Trials",

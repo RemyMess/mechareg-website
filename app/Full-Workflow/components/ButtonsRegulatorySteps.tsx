@@ -18,9 +18,9 @@ const ButtonsRegulatorySteps: React.FC<{ countryCode: string }> = ({ countryCode
                     {/* Alternating arrows (but not showing for last element) */}
                     {!(index == stepList.length - 1) ?
                             (index % 2 === 0) ? (
-                                <Image src={Arrow1} alt="Arrow 1" width={100} height={100} style={{ marginTop: '5px', marginBottom: '5px' }} />
+                                <Image src={Arrow1} alt="Arrow 1" width={150} height={150} style={{ marginTop: '5px', marginBottom: '5px' }} />
                             ) : (
-                                <Image src={Arrow2} alt="Arrow 2" width={100} height={100} style={{ marginTop: '5px', marginBottom: '5px' }} />
+                                <Image src={Arrow2} alt="Arrow 2" width={150} height={150} style={{ marginTop: '5px', marginBottom: '5px' }} />
                             )
                             : ""
                     }

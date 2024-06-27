@@ -16,7 +16,7 @@ const RegulatoryInfoPage: React.FC<RegulatoryInfoPageProps> = ({ countryCode }) 
                     src={`https://catamphetamine.gitlab.io/country-flag-icons/3x2/${countryCode}.svg`}
                     style={{ height: "50px" }}
                 />
-                {RegulatoryInfo.fullName}: How does it work there?
+                {RegulatoryInfo.fullName}: Regulatory Summary
             </h1>
             <h2 className="font-bold mt-4 mb-2">A. Relevant authorities:</h2>
             <p>{RegulatoryInfo.regulatoryAuthoritiesDescription}</p>
@@ -69,7 +69,7 @@ const RegulatoryInfoPage: React.FC<RegulatoryInfoPageProps> = ({ countryCode }) 
                     </li>
                 ))}
             </ol>
-            <h2 className="font-bold font-bold mt-4 mb-2">E. Recognised standards:</h2>
+            <h2 className="font-bold font-bold mt-4 mb-2">E. Does this country recognise international standards?</h2>
             {RegulatoryInfo.internationalStandards.acceptance ? (
                 <ul className="list-disc ml-6">
                     {RegulatoryInfo.internationalStandards.standards.map(standard => (
@@ -86,7 +86,7 @@ const RegulatoryInfoPage: React.FC<RegulatoryInfoPageProps> = ({ countryCode }) 
                     ))}
                 </ul>
             ) : (
-                <p>International standards not accepted.</p>
+                <p>International standards are generally not recognised.</p>
             )}
         </div>
     );
