@@ -1,8 +1,9 @@
+/*
 import NextAuth from "next-auth";
 import type { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import EmailProvider from "next-auth/providers/email";
-import { MongoDBAdapter } from "@auth/mongodb-adapter";
+// import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import config from "@/config";
 import connectMongo from "./mongo";
 
@@ -64,3 +65,4 @@ export const authOptions: NextAuthOptionsExtended = {
 };
 
 export default NextAuth(authOptions);
+*/

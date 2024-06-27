@@ -1,3 +1,4 @@
+/*
 import Link from "next/link";
 import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
@@ -34,7 +35,7 @@ const PrivacyPolicy = () => {
   return (
     <main className="max-w-xl mx-auto">
       <div className="p-5">
-        <Link href="/" className="btn btn-ghost">
+        <Link href="/public" className="btn btn-ghost">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -109,3 +110,4 @@ By using ShipFast, you consent to the terms of this Privacy Policy.`}
 };
 
 export default PrivacyPolicy;
+*/

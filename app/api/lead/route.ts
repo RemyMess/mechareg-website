@@ -1,5 +1,6 @@
+/*
 import { NextResponse, NextRequest } from "next/server";
-import connectMongo from "@/libs/mongoose";
+import connectMongo from "@/removed files/libs/mongoose";
 import Lead from "@/models/Lead";
 
 // This route is used to store the leads that are generated from the landing page.
@@ -30,3 +31,4 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: e.message }, { status: 500 });
   }
 }
+*/
