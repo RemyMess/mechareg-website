@@ -62,27 +62,35 @@ const ALL_REGULATORY_STEPS: RegulatorySteps =
                 {
                 stepName: "Identify Your Risk Class",
                 stepDescription: "In the UK, the regulations and process you will need to follow will depend on the risk class of your device (Class I, IIa, IIb, III).",
-                stepTools: [{title: "Do it now", description: "Run through a house-built optimal question tree narrowing down your risk class as fast as possible.", url: "https://remymessadene.notion.site/UK-Risk-Classifier-774d31775601403a8744285d0181f321?pvs=4"}]
+                stepTools: [{title: "Do it now!", description: "Run through a house-built optimal question tree narrowing down your risk class as fast as possible.", url: "https://remymessadene.notion.site/UK-Risk-Classifier-774d31775601403a8744285d0181f321?pvs=4"}]
                 },
+
                 {
-                stepName: "Verify Device Compliance",
+                  stepName: "Understand your risk requirements & set up a relevant QMS",
+                  stepDescription: "Depending on your risk class, your risk responsability vary. The tools you will need to handle them consist in a QMS as well as protocoles.",
+                  stepTools: [{title: "Do it now!", description: "Run through our decision-tree to identify with annex & risk requirements  you need to satisfy.", url: "https://www.notion.so/remymessadene/UK-Understand-your-risk-requirements-set-up-a-relevant-QMS-c59b1adf47704e89989005a7f7d82938?pvs=4"}]
+                },
+
+                {
+                stepName: "Assess your Product Compliance Status",
                 stepDescription: "Ensure that your device design, manufacturing processes, and safety testing meet the requirements of the UK Medical Device Regulations (MDR) 2002.",
-                stepTools: [{title: "Do it now", description: "Gather the main regulatory documents & guidelines before converting regulatory text into actionable requirements.", url: "https://remymessadene.notion.site/UK-Verify-Device-Compliance-a71082e171a340df82fc2eda5bfdd643?pvs=4"}]
+                stepTools: [{title: "Get started!", description: "Gather the main regulatory documents & guidelines before converting regulatory text into actionable requirements.", url: "https://remymessadene.notion.site/UK-Assess-your-Product-Compliance-Status-Produce-relevant-documentation-a71082e171a340df82fc2eda5bfdd643?pvs=74"}]
                 },
                 {
                 stepName: "Conduct Preclinical and Clinical Trials",
                 stepDescription: "Conduct necessary preclinical (laboratory) and clinical (human) trials to gather evidence of safety and efficacy for your device.",
-                stepTools: []
+                stepTools: [{title: "Review the guidelines", description: "Gather the main regulatory documents & guidelines before converting regulatory text into actionable requirements.", url: "https://remymessadene.notion.site/UK-Clinical-evaluation-502b17a22f7943fc8c6c45fd495672d7?pvs=4"}]
                 },
                 {
                 stepName: "Produce Required Documentation",
                 stepDescription: "Prepare the necessary technical documentation, including a description of the device, design and manufacturing information, and clinical data.",
-                stepTools: []
+                stepTools: [{title: "List of documentation to produce", description: "Find out the list of things you need to produce for your conformity assessment.", url: "https://remymessadene.notion.site/UK-Produce-gather-documentation-to-submit-3abd5ace6cad4d0fbe2e8ddd8c05e10f?pvs=4"}]
+
                 },
                 {
                 stepName: "Schedule a Conformity Assessment",
                 stepDescription: "Arrange a conformity assessment with a UK Approved Body for higher-risk devices (Class IIa, IIb, and III) to verify that your device meets regulatory requirements.",
-                stepTools: []
+                stepTools: [{title: "Pick a notified body", description: "Reach out to a certified body.", url: "https://remymessadene.notion.site/UK-Schedule-appointment-with-certified-body-994c145859a54917849d77c1aa23f297?pvs=25"}]
                 },
                 {
                 stepName: "Comply with UKCA Marking",
@@ -92,7 +100,7 @@ const ALL_REGULATORY_STEPS: RegulatorySteps =
                 {
                 stepName: "Register Your Device with MHRA",
                 stepDescription: "Submit your device registration to the Medicines and Healthcare products Regulatory Agency (MHRA) through their online portal.",
-                stepTools: []
+                stepTools: [{title: "Register with MHRA", description: "Fill out the application.", url: "https://www.gov.uk/guidance/register-medical-devices-to-place-on-the-market"}]
                 },
                 {
                 stepName: "Implement Post-market Surveillance",
